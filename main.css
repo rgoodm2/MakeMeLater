@@ -3,32 +3,67 @@ body {
 	height: 200px;
 	margin: 15px;
 }
-
-#yesButton {
+#Rglogo {
     position: fixed;
+    position: center;
+    border-radius: 0px;
+    width: 290px;
+    margin: 0px;
+}
+
+#header{
+    position: fixed;
+    position: center;
+    border-radius: 0px;
+    top: 70px;
+    left: 5px;
+    font-size: 17px;
+    color: black;
+    background-color: white; 
+
+}
+
+#defaultButton {
+    position: fixed;
+    top: 135px;
     left:80px;
     font-size: 15px;
     border-radius: 8px;
     background-color: white;
     border: 2px solid black;
-    color: black;
+    color: #43A765;
 }
 
-#noButton {
+#submit {
     position: fixed;
-    left:150px;
+    top: 200px;
+    left:80px;
     font-size: 15px;
     border-radius: 8px;
     background-color: white;
     border: 2px solid black;
-    color: black;
+    color: #43A765;
+}
+
+#newFolder {
+    position: fixed;
+    left:150px;
+    top: 135px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    color: #43A765;
 }
 #label{
-    position:relative;
-    top:46px;
+    position:fixed;
+    top:190px;
+    left: 20px;
+    color: black;
 }
 #title {
-    position: relative;
-    top:26px;
+    position: fixed;
+    top:187px;
     left:160px;
+    color: #43A765;
 }

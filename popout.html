@@ -3,24 +3,26 @@
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body style="background-color:light-green;">
-
 <div id="container">
 
-  <img id="Rglogo" src="\resources\logo.png" width="100" height="35">
-  <h2 id="header" style="font-family:verdana; text-align:center;">Where do you want to save this recipe?</h2>
+  <img id="Rglogo" src="\resources\logo.png">
+  <p id="header">Where do you want to save this recipe?</p>
 
   <div class="setting-section">
     <div class="buttons-group" id="file-selection">
-      <button id="yesButton" type="button">Default</button>
-      <button id="noButton" type="button">New Folder</button>
-      <p><label for="title" id="label">Custom Recipe Name:</label><br />
-        <input type="text" id="title" name="title" value="" /></p>
+      <button id="defaultButton" type="button">Default</button>
+      <!-- Set a default filepath button -->
+      <button id="newFolder" type="button">New Folder</button>
+      <!--Input to name the recipe file -->
+      <p><label for="title" id="label">Recipe File Path:</label><br />
+
+      <!--Submit button to save -->
+      <p><button id="submit" type="button" onclick="saveFile()">Save</button>
+        <!-- <form type="text" id="title" name="title" placeholder="Input filepath here."/></p> -->
+
     </div>
   </div>
-
 </div>
-
 <script type="text/javascript" src="popup.js"></script>
 </body>
 </html>

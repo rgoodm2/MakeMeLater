@@ -13,7 +13,7 @@ if (window == top) {
 // Return null if none is found.
 var findRecipe = function() {
   var found;
-  var re = /[Rr]ecipe/m;
+  var re = /[Rr]ecipe(s)*/m;
   var node = document.body;
   var done = false;
   while (!done) {
