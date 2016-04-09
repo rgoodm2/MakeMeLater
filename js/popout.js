@@ -1,16 +1,31 @@
-// Inject the background.js script into the current tab after the popout has loaded
-window.addEventListener('load', function (evt) {
-	chrome.extension.getBackgroundPage().chrome.tabs.executeScript(null, {
-		file: 'background.js'
+//Popout.html interactivity
+
+var filepath = null;
+
+function save(recipeData) {
+
+	//Add button eventListener to save recipeData
+	document.getElementById("submit").addEventListener("click", function() {
+		//
 	});
-});
+}
 
-//Listen to messages from the background.js script
-chrome.runtime.onMessage.addListener(function (message) {
-	//Save message to the filePath
-	// document.getElementById('pagetitle').innerHTML = message;
-});
+//Add button eventListener to input filepath
+function initFP() {
+	document.getElementById("filepath").addEventListener("onchange", function() {
+		//Update the filepath when the input changes
+		var fname = document.getElementById("filepath").value()
+		console.log(fname)
+		self.filepath = fname
+	})
+}
 
-$(#btn-save).addEventListener('click', function () {
-	//Write message to file
-});
+
+function init() {
+	var recipeData = chrome.extension.getBackgroundPage().selectedRecipe;
+  	if (recipeData) {save(recipeData)}
+  	initFP()
+
+}
+
+window.onload = init;
