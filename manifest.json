@@ -5,14 +5,26 @@
 	"description": "This extension parses the current webpage for recipe data and writes the recipe to a specified file path.",
 	"version": "1.0",
 
-	"browser_action": {
-		"default_icon": "icon.png",
-		"default_title": "MakeMeLater"
-	},
+	"page_action": {
+          "default_icon": {                    // optional
+            "19": "resources/icon.png",           // optional
+            "38": "resources/icon.png"            // optional
+          },
+          "default_title": "MakeMeLater",
+          "default_popup": "popup.html"        
+    },
+
 	"background": {
-		"scripts": ["background.js"],
+		"scripts": ["js/background.js"],
 		"persistent": false
 	},
+
+	"icons" : {
+		"16" : "resources/logo.png",
+		"48" : "resources/logo.png",
+		"128" : "resources/logo.png"
+	},
+
 	"permissions": [
 		"notifications"
 	]
