@@ -6,7 +6,7 @@ body {
 
 #yesButton {
     position: fixed;
-    left:76px;
+    left:80px;
     font-size: 15px;
     border-radius: 8px;
     background-color: white;
@@ -16,7 +16,7 @@ body {
 
 #noButton {
     position: fixed;
-    left:136px;
+    left:150px;
     font-size: 15px;
     border-radius: 8px;
     background-color: white;
