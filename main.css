@@ -23,7 +23,7 @@ body {
 
 }
 
-#yesButton {
+#defaultButton {
     position: fixed;
     top: 135px;
     left:80px;
@@ -34,7 +34,18 @@ body {
     color: #43A765;
 }
 
-#noButton {
+#submit {
+    position: fixed;
+    top: 200px;
+    left:80px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    color: #43A765;
+}
+
+#newFolder {
     position: fixed;
     left:150px;
     top: 135px;
