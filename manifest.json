@@ -11,7 +11,7 @@
             "38": "resources/icon.png"            // optional
           },
           "default_name": "MakeMeLater",
-          "default_popup": "popup.html"        
+          "default_popup": "popout.html"        
     },
 
 	"background": {
@@ -19,7 +19,7 @@
 	},
 
 	"content_scripts": [
-    { "matches": ["http://*/*"], "js": ["recipe_content_script.js"] }
+    { "matches": ["http://*/*"], "js": ["js/recipe_content_script.js"] }
   	],
 
 	"icons" : {
@@ -33,5 +33,3 @@
 		"tabs"
 	]
 }
-
-//Test
