@@ -3,6 +3,14 @@ body {
 	height: 200px;
 	margin: 15px;
 }
+#Rglogo {
+    position: fixed;
+    left:76px;
+    border-radius: 0px;
+    width: 200px;
+    margin: 0px;
+}
+
 
 #yesButton {
     position: fixed;
