@@ -4,18 +4,26 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body style="background-color:lightgreen;">
+
 <div id="container">
+
   <img id="logo">
   <h2 style="font-family:verdana; text-align:center;">Do you want to save this recipe?</h2>
+
   <div class="setting-section">
     <div class="buttons-group" id="file-selection">
-      <button type="button">Save to Make Later</button>
-      <p><label for="title">Custome Recipe Name</label><br />
+      <button id="yesButton" type="button">Yes!</button>
+      <button id="noButton" type="button">No, maybe later</button>
+      <p><label for="title" id="label">Custom Recipe Name:</label><br />
         <input type="text" id="title" name="title" size="20" value="" /></p>
     </div>
   </div>
+
 </div>
+
 <script type="text/javascript" src="popup.js"></script>
 </body>
 </html>
+
+
 
