@@ -1,35 +1,58 @@
+// {
+// 	"manifest_version": 2,
+
+// 	"name": "MakeMeLater",
+// 	"description": "This extension parses the current webpage for recipe data and writes the recipe to a specified file path.",
+// 	"version": "1.0",
+
+// 	"page_action": {
+//           "default_icon": {                    // optional
+//             "19": "resources/icon.png",           // optional
+//             "38": "resources/icon.png"            // optional
+//           },
+//           "default_name": "MakeMeLater",
+//           "default_popup": "popout.html"        
+//     },
+
+// 	"background": {
+// 		"scripts": ["js/background.js"]
+// 	},
+
+// 	"content_scripts": [
+//     { "matches": ["http://*/*"], "js": ["js/recipe_content_script.js"] }
+//   	],
+
+// 	"icons" : {
+// 		// "16" : "resources/logo.png",
+// 		// "48" : "resources/logo.png",
+// 		"128" : "resources/logo.png"
+// 	},
+
+// 	"permissions": [
+// 		"notifications",
+// 		"tabs"
+// 	]
+// }
+
 {
-	"manifest_version": 2,
-
-	"name": "MakeMeLater",
+  "name": "MakeMeLater",
+  "version": "1.0",
 	"description": "This extension parses the current webpage for recipe data and writes the recipe to a specified file path.",
-	"version": "1.0",
-
-	"page_action": {
-          "default_icon": {                    // optional
-            "19": "resources/icon.png",           // optional
-            "38": "resources/icon.png"            // optional
-          },
-          "default_name": "MakeMeLater",
-          "default_popup": "popout.html"        
-    },
-
-	"background": {
-		"scripts": ["js/background.js"]
-	},
-
-	"content_scripts": [
+  "icons": { "128": "resources/icon.png" },
+  "background": { "scripts": ["js/background.js"] },
+  "content_scripts": [
     { "matches": ["http://*/*"], "js": ["js/recipe_content_script.js"] }
-  	],
-
-	"icons" : {
-		// "16" : "resources/logo.png",
-		// "48" : "resources/logo.png",
-		"128" : "resources/logo.png"
-	},
-
-	"permissions": [
-		"notifications",
-		"tabs"
-	]
+  ],
+  "permissions": [
+    "tabs",
+    "https://maps.google.com/*",
+    "https://maps.googleapis.com/*"
+  ],
+  "page_action": {
+      "default_name": "Display Map",
+      "default_icon": "resources/icon.png",
+      "default_popup": "popout.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "default-src 'none'; style-src 'self'; script-src 'self'; connect-src https://maps.googleapis.com; img-src https://maps.google.com"
 }

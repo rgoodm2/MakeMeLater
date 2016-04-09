@@ -2,18 +2,18 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// The background page is asking us to find an address on the page.
+// The background page is asking us to find an recipe on the page.
 if (window == top) {
   chrome.extension.onRequest.addListener(function(req, sender, sendResponse) {
-    sendResponse(findAddress());
+    sendResponse(findRecipe());
   });
 }
 
-// Search the text nodes for a recipe
+// Search the text nodes for "Recipe".
 // Return null if none is found.
 var findRecipe = function() {
   var found;
-  var re = /[A-Za-z]*/;
+  var re = /[Rr]ecipe/m;
   var node = document.body;
   var done = false;
   while (!done) {
