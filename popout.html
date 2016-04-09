@@ -10,10 +10,15 @@
 
   <div class="setting-section">
     <div class="buttons-group" id="file-selection">
-      <button id="yesButton" type="button">Default</button>
-      <button id="noButton" type="button">New Folder</button>
-      <p><label for="title" id="label">Custom Recipe Name:</label><br />
-        <form type="text" id="title" name="title" placeholder="Input filepath here."/></p>
+      <button id="defaultButton" type="button">Default</button>
+      <!-- Set a default filepath button -->
+      <button id="newFolder" type="button">New Folder</button>
+      <!--Input to name the recipe file -->
+      <p><label for="title" id="label">Recipe File Path:</label><br />
+
+      <!--Submit button to save -->
+      <p><button id="submit" type="button" onclick="saveFile()">Save</button>
+        <!-- <form type="text" id="title" name="title" placeholder="Input filepath here."/></p> -->
     </div>
   </div>
 </div>

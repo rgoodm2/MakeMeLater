@@ -12,14 +12,17 @@ function save(recipeData) {
 
 //Add button eventListener to input filepath
 function initFP() {
-	document.getElementById("title").addEventListener("onchange", function() {
+	document.getElementById("label").addEventListener("onchange", function() {
 		//Update the filepath when the input changes
-		var fname = document.getElementById("title").value()
+		var fname = document.getElementById("label").value()
 		console.log(fname)
 		self.filepath = fname
 	})
 }
 
+function saveFile() {
+	
+}
 
 function init() {
 	var recipeData = chrome.extension.getBackgroundPage().selectedRecipe;
