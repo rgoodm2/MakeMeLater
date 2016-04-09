@@ -5,16 +5,16 @@ var filepath = null;
 function save(recipeData) {
 
 	//Add button eventListener to save recipeData
-	document.getElementById("submit").addEventListener("click", function() {
+	document.getElementById("yesButton").addEventListener("click", function() {
 		//
 	});
 }
 
 //Add button eventListener to input filepath
 function initFP() {
-	document.getElementById("filepath").addEventListener("onchange", function() {
+	document.getElementById("title").addEventListener("onchange", function() {
 		//Update the filepath when the input changes
-		var fname = document.getElementById("filepath").value()
+		var fname = document.getElementById("title").value()
 		console.log(fname)
 		self.filepath = fname
 	})
