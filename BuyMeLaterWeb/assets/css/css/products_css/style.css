@@ -1,0 +1,155 @@
+.container {
+	display: inline-block;
+	width: 100%
+	min-width: 300px;
+	/*background-color: blue;*/
+}
+/*added by taylor so ajax links still appear to be links with the white gloved hand*/
+a {
+	cursor: pointer;
+}
+h1 {
+	font-family: Futura, helvetica, arial;
+	font-size: 75px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	display: block;
+	position: static;
+	text-align: center;
+	border-bottom: solid 1px #333333;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+.header {
+	display: block;
+	width: 100%;
+	position: absolute;
+}
+
+.page-header {
+	padding-bottom: 0px;
+	border-bottom: 1px solid #333333;
+}
+
+.search {
+	width: 100px;
+	font-family: Futura, helvetica, arial;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	position: absolute;
+	display: inline;
+}
+
+
+
+.sidebar {
+	display: block;
+	font-family: times, helvetica, arial;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	margin-bottom: 45px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	position: static;
+	text-align: center;
+	border-bottom: 1px solid #333333;
+}
+
+.listitem {
+	list-style: none;
+	display: inline-block;
+	border-right: 1px solid #333333;
+	padding-right: 16px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.list {
+	display: inline;
+	text-align: center;
+	padding-left: 0px;
+}
+
+.lastitem {
+	list-style: none;
+	display: inline;
+	padding-right: 16px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.header_image {
+
+	text-align: center;
+}
+
+
+.imgWrap {
+	max-width: 100%;
+	margin-left: 15px;
+	padding-bottom: 20px;
+	height: auto;
+	text-align: center;
+}
+
+
+
+.photowrap:hover .imgDescription {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.imgWrap {
+	display: inline-block;
+	position: relative;
+}
+
+.imgWrap:hover .imgDescription {
+	visibility: visible;
+	opacity: 1;
+	color: 
+}
+
+.link {
+	color: #333333;
+}
+
+.link:hover {
+	color: #494747;
+	text-decoration: none;
+}
+
+.header_link {
+	color: #333333;
+}
+
+.header_link:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

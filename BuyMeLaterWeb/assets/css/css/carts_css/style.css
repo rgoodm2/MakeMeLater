@@ -1,0 +1,141 @@
+h1 {
+	font-family: Futura, helvetica, arial;
+	font-size: 75px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	display: block;
+	position: static;
+	text-align: center;
+	border-bottom: solid 1px #333333;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+body {
+	font-family: Futura, helvetica, arial;
+	padding: 0;
+	margin: 0;
+}
+
+.cart_text {
+	text-align: center;
+	border-bottom: 1px solid #333333;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.cart_text h2{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.trash_icon {
+	max-width: 100%;
+	height: auto;
+}
+
+.update_link {
+	color: #333333;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.update_link:hover {
+	color: #494747;
+}
+
+.item_count {
+	border: 1px solid #333333;
+	padding-left: 4px;
+  	padding-right: 4px;
+}
+.btn {
+	background-color: white;
+	color: #333333;
+	font-size: 14px;
+	border: 1px solid #333333;
+	padding-right: 6px;
+  	padding-left: 6px;
+}
+
+.table {
+	border-bottom: 1px solid #333333;
+}
+
+.select-style {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ccc;
+	width: 173px;
+	/*border-radius: 3px;*/
+	overflow: hidden;
+	background-color: #fff;
+	font-family: helvetica;
+	background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+	margin-bottom: 15px;
+	display: inline-block;
+	/*text-align: center;*/
+}
+
+.select-style select {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  color: #A9A9A9;
+  font-family: futura;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*text-align: center;*/
+}
+
+.check {
+	margin-right: 10px;
+}
+
+.pay_btn {
+	background-color: white;
+	color: #333333;
+	font-size: 14px;
+	border: 1px solid #333333;
+	padding-right: 6px;
+  	padding-left: 6px;
+}
+
+.state {
+	color: #333333;
+}
+
+.img {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 880px;
+}
+
+.img_div {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 880px;
+}
+
+h3 {
+	display: inline-block;
+}
+
+.shipping_info {
+	text-align: center;
+}
+
+.billing_info {
+	text-align: center;
+}
+
+.credit_info {
+	text-align: center;
+}
