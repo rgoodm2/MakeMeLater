@@ -16,7 +16,7 @@ body {
     position: center;
     border-radius: 0px;
     top: 70px;
-    left: 5px;
+    left: 14px;
     font-size: 17px;
     color: black;
     background-color: white; 
@@ -72,5 +72,4 @@ body {
 #optionsHeader{
     position:relative;
     left:50%;
-
 }
