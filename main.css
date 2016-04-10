@@ -61,11 +61,12 @@ body {
     left: 20px;
     color: black;
 }
-#title {
+#textFile {
     position: fixed;
-    top:187px;
-    left:160px;
-    color: #43A765;
+    width: 160px;
+    top:190px;
+    left:145px;
+    color: black;
 }
 
 #optionsHeader{
